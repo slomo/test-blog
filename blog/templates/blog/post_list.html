@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Text</title>
+  </head>
+  <body>
+    {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <div>{{ post.author }}</div>
+    <div>{{ post.text | linebreaks }}</div>
+    {% endfor %}
+  </body>
+</html>
